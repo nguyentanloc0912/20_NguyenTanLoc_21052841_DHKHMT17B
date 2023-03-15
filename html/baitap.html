@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     .bai14{
+        height: 140px;
+        width: 700px;
+        text-align: justify;
+        border-top: double red;
+        border-left: double red;
+        border-radius: 8px;
+        border-bottom: dotted red;
+        border-left: dotted red;
+        background-color: aquamarine;
+        transition: 6s;
+     }
+     .bai14:hover{
+         transform:  scale(2) rotate(360deg);
+         opacity: 0.8;
+     }
+    .bai15{
+        height: 50px;
+        width: 350px;
+        box-shadow: 0 0  3px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bai15 input:focus{
+         width: 250px;
+         background-color: aqua;
+    }
+    .menu .liname{
+        display: block;
+        height: 50px;
+        width: 100px;
+        background-color: rgb(208, 151, 76);
+        margin-top: -1px;
+        box-shadow: 0 0 3px black;
+        border-radius: 6px;
+        text-align: center;
+        position: relative;
+    }
+    .liname:before{
+     position:absolute;
+     content:'';
+     position: absolute;
+     top: 5px;
+     bottom: 5px;
+     border-radius: 6px;
+     left: 5px;
+     right: 5px;
+     border:4px dotted #dcd3bd;
+}
+.menu .liname a{
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 2px black;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.liname:hover a{
+    background-color: cadetblue;
+    color: black;
+}
+.bai18{
+    height: 40px;
+    width: 540px;
+    background-color: aqua;
+}
+.topmenu li {
+    display: inline-block;
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    background-color: rgb(32, 167, 201);
+    margin-right: -4px;
+    position: relative;
+}
+.topmenu> li> a{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+.topmenu> li:hover> a{
+    background-color: aquamarine;
+    color: black;
+    text-shadow: 0 0 2px black;
+}
+
+.subnav_a{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav_bai18{
+ width: 100%;
+background-color: green;
+text-align: center;
+}
+.nav_bai18>ul>li{
+list-style-type: none;
+display: inline;
+margin-right: 100px;
+font-size: 25px;        
+}
+a:link{
+color: #fff;
+text-decoration: none;
+}
+a:hover{
+color: orange;
+text-decoration: none;
+}
+.nav_bai18>ul>li>ul{
+display: none;
+}
+.nav_bai18>ul>li:hover>ul{
+display: block;
+position: absolute;
+left: 40%;
+background-color: green;
+margin: 0;
+}
+.nav_bai18>li:hover>ul>li>a:link{
+display: block;
+margin-right: 15px;
+margin-top: 20px;
+}
+#animated{
+        -webkit-animation-name: scroll;
+        -moz-animation-name: scroll;
+        -o-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 5s;
+        -moz-animation-duration: 5s;
+        -o-animation-duration: 5s;
+        animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -moz-animation-timing-function: ease-in-out;
+        -o-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-direction: alternate;
+        -moz-animation-direction: alternate;
+        -o-animation-direction: alternate;
+        animation-direction: alternate;
+        
+    }
+    #animated{
+        position:absolute;
+        width: 100px;
+        height: 100px;
+        left: 0px;
+        top: 100px;
+        background: #ffcc00;
+    }
+    @-webkit-keyframes scroll{
+        to{
+            left: 100%;
+            -webkit-transform: rotate(180deg);
+        }
+    }
+    @-moz-keyframes scroll{
+        to{
+            left: 100%;
+            -webkit-transform: rotate(180deg);
+        }
+    }
+    @-o-keyframes scroll{
+        to{
+            left: 100%;
+            -webkit-transform: rotate(180deg);
+        }
+    }
+    @keyframes scroll{
+        to{
+            left: 100%;
+            -webkit-transform: rotate(180deg);
+        }
+    }
+    .footer{
+            position: fixed;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 50px;
+            background-color: green;
+            color: #fff;
+            z-index: 1;
+        }
+        .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  position: relative;
+  width: 500px;
+  margin: 10px;
+  overflow: hidden;
+  border: 2px solid #0077be;
+}
+
+.img-wrap {
+  position: relative;
+}
+
+.item img {
+  position: relative;
+  width: 300px;
+  margin: 10px auto;
+  border: 2px solid #0077be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  text-align: center;
+  bottom: 0;
+  width: 90%;
+  padding: 10px;
+  margin: 0;
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+.item:hover .caption {
+  transform: translateY(0);
+}
+    </style>
+</head>
+<body>
+    <div>Bài 10</div>
+    <div id="animated"></div>
+<div>Bài 11</div>
+<div class="footer">I will be stuck here!! help me</div>
+<p>Cascading Style Sheet (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create vissualy engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. [1]</p>
+<div>Bài 13</div>
+<div class="gallery">
+    <div class="item">
+      <div class="img-wrap">
+        <img src="../img/pic_hoagiay.jpg" alt="Image 1">
+      </div>
+      <div class="caption">
+        Hoa giấy là loại hoa được làm từ giấy màu có độ bền và
+        màu sắc đa dạng. Thường được dùng để trang trí trong các
+        buổi tiệc, lễ hội hoặc trong các sự kiện. Hoa giấy cũng
+        là một món quà độc đáo và ý nghĩa để tặng cho người thân
+        và bạn bè.
+      </div>
+    </div>
+    <div class="item">
+        <div class="img-wrap">
+          <img src="../img/pic_hoahuongduong.jpg" alt="Image 2">
+        </div>
+        <div class="caption">
+        Hoa hướng dương là loại hoa được biết đến với tên gọi
+        tiếng Anh là sunflower. Đây là loại hoa có nguồn gốc từ
+        Mỹ và là biểu tượng của ánh nắng và sự tươi vui. Hoa
+        hướng dương có màu vàng rực rỡ và kích thước lớn. Loài
+        hoa này còn được sử dụng để trang trí trong các buổi
+        tiệc cưới, lễ hội và trong các sự kiện quan trọng.
+        </div>
+    </div>
+    <div class="item">
+        <div class="img-wrap">
+          <img src="../img/pic_hoasen.jpg" alt="Image 3">
+        </div>
+        <div class="caption">
+        Hoa sen là loài hoa được biết đến với tên gọi "hoa sen
+        Đông Dương", là biểu tượng của sự trong sáng, sự tinh
+        khiết và sự thanh cao. Hoa sen thường được trồng ở các
+        đầm lầy, hồ nước và là loài hoa cội thiêng và quý giá ở
+        nhiều nền văn hóa trên thế giới, đặc biệt là ở châu Á.
+        </div>
+      </div>
+    <div class="item">
+        <div class="img-wrap">
+          <img src="../img/pic_rose.jpg" alt="Image 3">
+        </div>
+        <div class="caption">
+        Hoa hồng là loài hoa được yêu thích nhất trên thế giới vì
+        sự đa dạng về màu sắc, hương thơm và ý nghĩa sâu sắc.
+        Hoa hồng thường được tặng để thể hiện tình yêu, tình bạn
+        và sự tri ân. Mỗi màu sắc của hoa hồng cũng mang một ý
+        nghĩa khác nhau, ví dụ như hoa hồng đỏ thể hiện tình
+        yêu, hoa hồng trắng thể hiện tình bạn và hoa hồng vàng
+        thể hiện sự tri ân.
+        </div>
+      </div>
+</div>
+<div>Bài 14</div>
+    <div class="bai14">
+      A young boy enters a barbershop and the barber whispers to his customer. 
+      “This is the dumbest kid in the world. Watch while I prove it to you.” 
+      The barber puts a dollar bill in one hand and two quarters in the other,
+       then calls the boy over and asks, “Which do you want, son?” The boy takes the quarters and leaves.
+        “What did I tell you?” said the barber. After, when the customer leaves, the man sees the young baby coming out of the ice cream store.
+         He said, “Hey, baby boy! Can I ask you a question? Why did you choose the quarter instead of the dollar bill?” The boy licked his cone and replied, 
+         “Because the day I take the dollar, the game is over!”
+    </div>
+
+
+<div>Bài 15</div>
+<div class="bai15">
+    <form action="">
+        Search:
+        <input type="text" name="Search">
+    </form>
+</div>
+<div>Bài 16</div>
+<div class="bai16">
+<nav>
+    <ul class="menu">
+        <li class="liname"><a href="#">Home</a></li>
+        <li class="liname"><a href="#">Service</a></li>
+        <li class="liname"><a href="#">Product</a></li>
+        <li class="liname"><a href="#">Contact</a></li>
+    </ul>
+</nav>
+</div>
+<div>Bài 17</div>
+<div class="bai18">
+<nav>
+    <ul class="topmenu">
+        <li><a href="">HOME</a></li>
+        <li><a href="">NEWS</a></li>
+        <li><a href="">ARTICLES</a></li>
+        <li><a href="">FORUM</a></li>
+        <li><a href="">CONTACT</a></li>
+        <li><a href="">ABOUT</a>
+        </li>
+    </ul>
+</nav>
+</div>
+<div >bài 18</div>
+<div>
+    <nav class="nav_bai18">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Products</a>
+                <ul style="list-style: none;">
+                    <li><a href="#">Engineering</a></li>
+                    <li><a href="#">Telecom</a></li>
+                    <li><a href="#">Energy</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Consultancy</a></li> 
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+</nav>
+</body>
+</html>
